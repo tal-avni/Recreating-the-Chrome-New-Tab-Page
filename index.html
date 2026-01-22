@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Right Corner Links -->
+    <nav class="top-nav">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <button class="apps-button" aria-label="Google Apps">
+            <span class="dots-grid">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+            </span>
+        </button>
+        <a href="#" class="profile-button" aria-label="Profile">
+            <img src="profile-google-ring.png" alt="Profile" class="profile-img">
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Google Logo -->
+        <div class="logo-container">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" 
+                 class="google-logo">
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-bar">
+               <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#5f6368"/>
+                </svg>
+                <input type="text" 
+                       class="search-input" 
+                       placeholder="Search Google or type a URL">
+                 <svg class="mic-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path fill="#5f6368" d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1 1.93c-3.94-.49-7-3.85-7-7.93h2c0 3.31 2.69 6 6 6s6-2.69 6-6h2c0 4.08-3.06 7.44-7 7.93V20h4v2H8v-2h4v-4.07z"/>
+                </svg>
+                 <svg class="lens-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path fill="#5f6368" d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zm0 3H19V19h-1.5v-1.5zM19 13h-1.5v1.5H19V13z"/>
+                </svg>
+                <button class="ai-mode-button"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24"></rect></g><g><g><path d="M17.5 12c0-3.04 2.46-5.5 5.5-5.5-3.04 0-5.5-2.46-5.5-5.5 0 3.04-2.46 5.5-5.5 5.5 3.04 0 5.5 2.46 5.5 5.5z"></path><path d="M15.65 11.58c.18-.5.27-1.03.31-1.58h-2c-.1 1.03-.51 1.93-1.27 2.69-.88.87-1.94 1.31-3.19 1.31C7.03 14 5 12.07 5 9.5 5 7.03 6.93 5 9.5 5c.46 0 .89.08 1.3.2l1.56-1.56C11.5 3.22 10.55 3 9.5 3 5.85 3 3 5.85 3 9.5S5.85 16 9.5 16c.56 0 2.26-.06 3.8-1.3l6.3 6.3 1.4-1.4-6.3-6.3c.4-.5.72-1.08.95-1.72z"></path></g></g></svg> AI Mode</button>
+            </div>
+        </div>
+
+        <!-- Shortcut Icons Grid -->
+        <div class="shortcuts-container">
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="Gmail">
+                </div>
+                <span class="shortcut-label">Gmail</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="Floodlight">
+                </div>
+                <span class="shortcut-label">Floodlight</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="Messenger">
+                </div>
+                <span class="shortcut-label">Messenger</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="Discord">
+                </div>
+                <span class="shortcut-label">Discord</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="S-VHSS">
+                </div>
+                <span class="shortcut-label">ספורט 5</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="Facebook">
+                </div>
+                <span class="shortcut-label">(1) Facebook</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="Amazon">
+                </div>
+                <span class="shortcut-label">Amazon.co...</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="Trips">
+                </div>
+                <span class="shortcut-label">https</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    <img src="https://via.placeholder.com/24" alt="ZY VH">
+                </div>
+                <span class="shortcut-label">לוח יד 2</span>
+            </a>
+            <a href="#" class="shortcut">
+                <div class="shortcut-icon">
+                    +
+                </div>
+                <span class="shortcut-label">Add shortcut</span>
+            </a>
+            
+        </div>
+
+        <!-- Continue Tabs Card -->
+        <div class="continue-tabs-card">
+            <div class="card-header">
+                <span class="card-title">Continue with these tabs</span>
+                <button class="card-menu" aria-label="More options">⋮</button>
+            </div>
+            <ul class="tabs-list">
+                <li class="tab-item">
+                    <img src="https://via.placeholder.com/16" alt="" class="tab-favicon">
+                    <div class="tab-info">
+                        <span class="tab-title">PokeCraft</span>
+                        <span class="tab-meta">pokecraft.net • Phone • You added 10 hours ago</span>
+                    </div>
+                </li>
+                <li class="tab-item">
+                    <img src="https://via.placeholder.com/16" alt="" class="tab-favicon">
+                    <div class="tab-info">
+                        <span class="tab-title">PokéCraft - Timeline</span>
+                        <span class="tab-meta">trello.com • Phone • You added 10 hours ago</span>
+                    </div>
+                </li>
+                <li class="tab-item">
+                    <img src="https://via.placeholder.com/16" alt="" class="tab-favicon">
+                    <div class="tab-info">
+                        <span class="tab-title">myactivity.google.com - Phone - You...</span>
+                        <span class="tab-meta">myactivity.google.com</span>
+                    </div>
+                </li>
+                <li class="tab-item">
+                    <img src="https://via.placeholder.com/16" alt="" class="tab-favicon">
+                    <div class="tab-info">
+                        <span class="tab-title">Apple Airpods Today for 55 Shekels</span>
+                        <span class="tab-meta">facebook.com • Phone • You added</span>
+                    </div>
+                </li>
+                <li class="tab-item">
+                    <img src="https://via.placeholder.com/16" alt="" class="tab-favicon">
+                    <div class="tab-info">
+                        <span class="tab-title">all uhh - Google Search</span>
+                        <span class="tab-meta">google.com • Phone • You added 10 hours ago</span>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="see-more">See more →</a>
+        </div>
+    </main>
+</body>
+</html>
