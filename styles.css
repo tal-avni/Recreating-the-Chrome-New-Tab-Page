@@ -435,8 +435,8 @@ body {
 @media (max-width: 640px) {
     .main-content {
         padding-top: 60px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
         padding-bottom: 32px;
     }
     
@@ -446,20 +446,32 @@ body {
     
     .search-container {
         max-width: 100%;
-        padding: 20px 0;
+        padding: 20px 16px;
     }
     
     .search-bar {
         border-radius: 24px;
-        padding: 10px 16px;
-        height: 44px;
+        padding: 8px 12px;
+        height: 48px;
+    }
+    
+    .search-input {
+        font-size: 15px;
+    }
+    
+    .mic-icon,
+    .lens-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
     }
     
     .ai-mode-button {
-        padding: 6px 14px;
-        height: 32px;
-        font-size: 13px;
+        padding: 6px 12px;
+        height: 30px;
+        font-size: 12px;
         margin-left: 8px;
+        gap: 4px;
     }
     
     .ai-mode-button svg {
@@ -469,6 +481,9 @@ body {
     
     .shortcuts-container {
         max-width: 100%;
+        padding: 0;
+        justify-content: flex-start;
+        overflow-x: auto;
     }
     
     .shortcut {
@@ -482,14 +497,13 @@ body {
     }
     
     .continue-tabs-card {
-        max-width: 100%;
+        max-width: none;
+        width: 100%;
         margin-bottom: 32px;
-        margin-left: -16px;
-        margin-right: -16px;
-        width: calc(100% + 32px);
-        border-radius: 0;
-        border-left: none;
-        border-right: none;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 20px;
+        padding: 20px 16px 24px 16px;
     }
     
     .top-nav {
