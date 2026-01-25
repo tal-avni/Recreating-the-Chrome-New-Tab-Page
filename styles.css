@@ -13,8 +13,12 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     min-height: 100vh;
+    width: 100%;
     /* Light blue-purple gradient background */
     background: linear-gradient(135deg, #e8f0fe 0%, #cbdbfa 10%, #cbdbfa 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +96,6 @@ body {
     justify-content: flex-start;
     padding-top: 100px;
     width: 100%;
-    max-width: 900px;
 }
 
 /* ========================================
@@ -244,7 +247,7 @@ body {
     display: flex;
     gap: 0;
     margin-bottom: 32px;
-    max-width: 1100px;
+    
 }
 
 .shortcut {
@@ -254,7 +257,7 @@ body {
     text-decoration: none;
     padding: 12px 20px;
     border-radius: 8px;
-    width: 112px;
+    width: 100px;
     transition: background-color 0.2s ease;
 }
 
@@ -266,7 +269,7 @@ body {
 .shortcut-icon {
     width: 48px;
     height: 48px;
-    background-color: #ffffff;
+    background-color: rgba(72, 130, 215, 0.35);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -281,6 +284,7 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 2px;
+   
 }
 
 .shortcut-label {
@@ -306,23 +310,25 @@ body {
 .continue-tabs-card {
     width: 100%;
     max-width: 750px;
-    background: linear-gradient(135deg, rgba(180, 200, 230, 0.5) 0%, rgba(200, 215, 240, 0.5) 100%);
-    border: 1.5px solid rgba(150, 175, 215, 0.6);
+    background: rgba(72, 130, 215, 0.35);
+    border: 10px rgba(72, 130, 215, 0.35);
     border-radius: 24px;
-    padding: 24px 28px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 40px;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    padding: 2px 2px 2px 20px;
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    color: #5f6368;
+    color: #3c4043;
 }
 
 .card-menu {
@@ -348,30 +354,37 @@ body {
 .tab-item {
     display: flex;
     align-items: center;
-    padding: 12px 16px;
-    border-radius: 16px;
+    padding: 10px 14px;
+    border-radius: 0;
     transition: background-color 0.2s ease;
     cursor: pointer;
-    background-color: rgba(220, 230, 250, 0.4);
-    margin-bottom: 8px;
+    background-color: rgba(240, 245, 255, 0.75);
+    margin-bottom: 0;
+    border-bottom: 1px ;
+}
+
+.tab-item:first-child {
+    border-radius: 14px 14px 0 0;
 }
 
 .tab-item:last-child {
+    border-radius: 0 0 14px 14px;
     margin-bottom: 0;
+    border-bottom: none;
 }
 
 .tab-item:hover {
-    background-color: rgba(220, 230, 250, 0.6);
+    background-color: rgba(240, 245, 255, 0.95);
 }
 
 .tab-favicon {
-    width: 48px;
-    height: 48px;
-    margin-right: 16px;
-    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    margin-right: 14px;
+    border-radius: 10px;
     object-fit: contain;
-    background-color: rgba(200, 215, 240, 0.6);
-    padding: 10px;
+    background-color: rgba(72, 130, 215, 0.35);
+    padding: 9px;
     flex-shrink: 0;
 }
 
@@ -384,17 +397,17 @@ body {
 }
 
 .tab-title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    color: #3c4043;
+    color: #202124;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .tab-meta {
-    font-size: 13px;
-    color: #80868b;
+    font-size: 12px;
+    color: #70757a;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -402,18 +415,18 @@ body {
 
 .see-more {
     display: inline-block;
-    padding: 12px 16px 4px 16px;
-    color: #5f6368;
+    padding: 10px 14px 2px 14px;
+    color: #3c4043;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     border-radius: 8px;
     transition: background-color 0.2s ease;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .see-more:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(240, 245, 255, 0.6);
     cursor: pointer;
 }
 
@@ -425,6 +438,7 @@ body {
         padding-top: 60px;
         padding-left: 16px;
         padding-right: 16px;
+        padding-bottom: 32px;
     }
     
     .google-logo {
@@ -451,6 +465,7 @@ body {
     
     .continue-tabs-card {
         max-width: 100%;
+        margin-bottom: 32px;
     }
     
     .top-nav {
