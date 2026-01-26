@@ -102,12 +102,13 @@ body {
    Google Logo
    ======================================== */
 .logo-container {
-    margin-bottom: 28px;
+    margin-bottom: px;
 }
 
 .google-logo {
     width: 272px;
-    height: 92px;
+    
+    
 }
 
 /* ========================================
@@ -125,8 +126,8 @@ body {
     align-items: center;
     background-color: #ffffff;
     border-radius: 28px;
-    padding: 12px 24px;
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.1);
+    padding: 12px 11px;
+    box-shadow: 0 10px 10px rgba(32, 33, 36, 0.1);
     transition: box-shadow 0.2s ease;
     width: 100%;
     height: 48px;
@@ -181,7 +182,7 @@ body {
 .ai-mode-button {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     margin-left: 12px;
     padding: 8px 20px;
     background: #f8f9fa;
@@ -251,7 +252,7 @@ body {
 }
 
 .shortcut {
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
@@ -295,7 +296,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    display: flex;
+    
 }
 
 /* Add Shortcut Button */
@@ -312,8 +313,8 @@ body {
     max-width: 750px;
     background: rgba(72, 130, 215, 0.35);
     border: 10px soft rgba(72, 130, 215, 0.35);
-    border-radius: 28px;
-    padding: 20px 24px 24px 24px;
+    border-radius: 20px;
+    padding: 20px 8px 8px 8px;
     margin-bottom: 40px;
 }
 
@@ -321,13 +322,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 }
 
 .card-title {
     font-size: 15px;
     font-weight: 500;
     color: #3c4043;
+    padding-left: 10px;
+    
 }
 
 .card-menu {
@@ -337,6 +340,7 @@ body {
     color: #5f6368;
     cursor: pointer;
     padding: 8px;
+    padding-right: 20px;
     border-radius: 50%;
     transition: background-color 0.2s ease;
     line-height: 1;
@@ -414,11 +418,11 @@ body {
 
 .see-more {
     display: inline-block;
-    padding: 10px 14px 4px 14px;
+    padding: 10px 14px 4px 1px;
     color: #3c4043;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
     border-radius: 8px;
     transition: background-color 0.2s ease;
     margin-top: 2px;
@@ -429,84 +433,3 @@ body {
     cursor: pointer;
 }
 
-/* ========================================
-   Responsive Adjustments
-   ======================================== */
-@media (max-width: 640px) {
-    .main-content {
-        padding-top: 60px;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 32px;
-    }
-    
-    .google-logo {
-        width: 200px;
-    }
-    
-    .search-container {
-        max-width: 100%;
-        padding: 20px 16px;
-    }
-    
-    .search-bar {
-        border-radius: 24px;
-        padding: 8px 12px;
-        height: 48px;
-    }
-    
-    .search-input {
-        font-size: 15px;
-    }
-    
-    .mic-icon,
-    .lens-icon {
-        width: 20px;
-        height: 20px;
-        margin-left: 8px;
-    }
-    
-    .ai-mode-button {
-        padding: 6px 12px;
-        height: 30px;
-        font-size: 12px;
-        margin-left: 8px;
-        gap: 4px;
-    }
-    
-    .ai-mode-button svg {
-        width: 16px;
-        height: 16px;
-    }
-    
-    .shortcuts-container {
-        max-width: 100%;
-        padding: 0;
-        justify-content: flex-start;
-        overflow-x: auto;
-    }
-    
-    .shortcut {
-        width: 72px;
-        padding: 12px 8px;
-    }
-    
-    .shortcut-icon {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .continue-tabs-card {
-        max-width: none;
-        width: 100%;
-        margin-bottom: 32px;
-        margin-left: 0;
-        margin-right: 0;
-        border-radius: 20px;
-        padding: 20px 16px 24px 16px;
-    }
-    
-    .top-nav {
-        display: none;
-    }
-}
