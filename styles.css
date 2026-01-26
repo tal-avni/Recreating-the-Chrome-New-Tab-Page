@@ -14,7 +14,6 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     min-height: 100vh;
     width: 100%;
-    /* Light blue-purple gradient background */
     background: linear-gradient(135deg, #e8f0fe 0%, #cbdbfa 10%, #cbdbfa 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -87,7 +86,7 @@ body {
 }
 
 /* ========================================
-   Main Content - Centered with Flexbox
+   Main Content 
    ======================================== */
 .main-content {
     display: flex;
